@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TweetStoks</title>
+	<link rel="stylesheet" href="stylesheets/style.css">
+	<link rel="stylesheet" href="stylesheets/bootstrap.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-static-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		    	<span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		    </button>
+		    <a class="navbar-brand">TwitStoks</a>
+		</div>
+		
+		<form role="search" class="navbar-form navbar-left">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="SYMBOL($AAPL)">
+				</div>
+				<button class="btn btn-default" type="submit">Find</button>
+		</form>
+		<div class="collapse navbar-collapse" id="navbar">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">Home</a></li>
+				<li class="dropdown"><a href=""class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Account <span class="caret"></span></a>
+	          		<ul class="dropdown-menu" role="menu">
+	            		<li><a href="#">Profile</a></li>
+	            		<li><a href="#">Settings</a></li>
+	            		<li class="divider"></li>
+	            		<li><a href="#">Logout</a></li>
+	          		</ul>
+	          	</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-2 col-xs-12">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">Trends</h3>
+				</div>
+				
+					<ul class="list-group">
+					    <li class="list-group-item"><span style="color:#008cba;font-weight:bold">$AAPL</span><br/><small>Apple Inc.</small></li>
+					    <li class="list-group-item"><span style="color:#008cba;font-weight:bold">$MSFT</span><br/><small>Microsoft Inc.</small></li>
+					    <li class="list-group-item"><span style="color:#008cba;font-weight:bold">$GOOG</span><br/><small>Google Inc.</small></li>
+					    <li class="list-group-item"><span style="color:#008cba;font-weight:bold">$YHOO</span><br/><small>Yahoo</small></li>
+						<li class="list-group-item"><span style="color:#008cba;font-weight:bold">$TWTR</span><br/><small>Twitter</small></li>
+					</ul>
+				
+			</div>
+		</div>
+		<div class="col-md-7 col-xs-12 col-sm-6">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<ul class="nav nav-tabs">
+						<li role="presentation" class="active"><a href="#">Live Feed</a></li>
+						<li role="presentation"><a href="#">Top Positive Sentiments</a></li>
+						<li role="presentation"><a href="#">Top Negative Sentiments</a></li>
+					</ul>
+					<br/><br/><img src="images/feeds.png"><br/><br/><br/>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-xs-12 col-sm-6"><div class="panel panel-primary">
+			<div class="panel-heading">Sentiment</div>
+			<div class="panel-body">
+				<ul class="nav nav-tabs">
+					<li role="presentation" class="active"><a href="#">DJIA</a></li>
+					<li role="presentation"><a href="#">Nasdaq</a></li>
+				</ul><br/>
+			<img src="images/djia.png" style="margin-left:-7px"></div>
+		</div></div>
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="javascripts/bootstrap.min.js"></script>
+<script src="javascripts/app.js"></script>
+</body>
+</html>
+
